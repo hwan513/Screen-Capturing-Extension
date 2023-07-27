@@ -3,7 +3,7 @@ function injectCode() {
     if (tabs.length > 0) {
       chrome.scripting.executeScript({
         target: {tabId: tabs[0].id},
-        files: ['main.js']
+        files: ['dist/main.js']
       });
     }
   });
